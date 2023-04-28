@@ -1,8 +1,0 @@
-<c:FragmentDefinition
-	xmlns="sap.m"
-	xmlns:c="sap.ui.core"
-    xmlns:core="sap.ui.core"
->
-
-<core:Fragment fragmentName="sertifakalifirmalar.proje.fragments.TumSertifikaliFirmalarFilterBar" type="XML" /> 
-</c:FragmentDefinition>
