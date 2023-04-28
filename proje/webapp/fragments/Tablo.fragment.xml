@@ -8,7 +8,6 @@
     xmlns:core="sap.ui.core"
 >
 
-<core:Fragment fragmentName="sertifakalifirmalar.proje.fragments.KriterlereGoreListeleFilterBar" type="XML" />
 
 
 	<m:Page
@@ -24,22 +23,7 @@
 				sort="sortDeliveryDate"
 				ariaLabelledBy="title">
 				<extension>
-					<m:OverflowToolbar style="Clear">
-						<m:Title id="title" text="Products"/>
-						<m:ToolbarSpacer/>
-						<m:Button
-							icon="sap-icon://sorting-ranking"
-							tooltip="Sort ascending across Categories and Name"
-							press="sortCategoriesAndName"/>
-						<m:Button
-							icon="sap-icon://sort"
-							tooltip="Sort Categories in addition to current sorting"
-							press="sortCategories"/>
-						<m:Button
-							icon="sap-icon://decline"
-							tooltip="Clear all sortings"
-							press="clearAllSortings"/>
-					</m:OverflowToolbar>
+					
 				</extension>
 				<columns>
 					<Column
@@ -108,9 +92,91 @@
 					</Column>
                     <Column
 						id="email"
-						width="9rem"
+						width="6rem"
 						sortProperty="DeliveryDateStr">
 						<m:Label text="E-Mail" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+                      <Column
+						id="adres"
+						width="6rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Adres" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+                      <Column
+						id="faaliyetalani"
+						width="6rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Faaliyet Alanı" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+
+                     <Column
+						id="yetki"
+						width="6rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Yetki" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+
+                    <Column
+						id="kisitlamanedeni"
+						width="8rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Kısıtlama Nedeni" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+
+                      <Column
+						id="kisitlamabegda"
+						width="8rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Kısıtlama Başlangıç Tarihi" />
+						<template>
+							<m:Text text="{
+								path: 'DeliveryDateStr',
+								type: 'sap.ui.model.type.Date',
+								formatOptions: {source: {pattern: 'dd/MM/yyyy'}, style: 'long'}
+							}" wrapping="false" />
+						</template>
+					</Column>
+
+                     <Column
+						id="kisitlamaendda"
+						width="8rem"
+						sortProperty="DeliveryDateStr">
+						<m:Label text="Kısıtlama Bitiş Tarihi" />
 						<template>
 							<m:Text text="{
 								path: 'DeliveryDateStr',
