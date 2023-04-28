@@ -2,9 +2,11 @@
     <fb:FilterBar showClearOnFB="true" id="tumfilterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" clear="ClearFilterbar" filterChange=".onFilterChange" afterVariantLoad=".onAfterVariantLoad">
         <fb:filterItems>
             <fb:FilterItem name="il" label="İl">
-                <fb:control>
+               
+			  
+			    <fb:control>
                     <MultiComboBox
-                        id="LowerBodyName"
+                        id="tumil"
                         selectionChange="handleSelectionChange"
                         selectionFinish="handleSelectionFinish"
                         width=""
@@ -18,7 +20,7 @@
     <fb:FilterItem name="ilce" label="İlçe">
                 <fb:control>
                     <MultiComboBox
-                        id="LowerBodyWeights"
+                        id="tumilce"
                         selectionChange="handleSelectionChange"
                         selectionFinish="handleSelectionFinish"
                         width=""
