@@ -15,10 +15,10 @@
 		<items>
 			<IconTabFilter text="Tüm Sertifikalı Firmaları Listele" key="tum">
 				
-				<core:Fragment fragmentName="sertifakalifirmalar.proje.Fragments.TumSertifikalıFirmalarFilterBar" type="XML" />
+				<core:Fragment fragmentName="sertifakalifirmalar.proje.fragments.TumSertifikaliFirmalar" type="XML" />
 			</IconTabFilter>
 			<IconTabFilter text="Kriterlere Göre Listele" key="kriterler">
-				<core:Fragment fragmentName="sertifakalifirmalar.proje.fragments.KriterlereGoreListeleFilterBar" type="XML" />
+				<core:Fragment fragmentName="sertifakalifirmalar.proje.fragments.KriterlereGoreListele" type="XML" />
 			</IconTabFilter>
 			
 		</items>
