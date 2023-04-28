@@ -13,6 +13,7 @@
 		<items>
 			<IconTabFilter text="Tüm Sertifikalı Firmaları Listele" key="tum">
 				
+				<core:Fragment fragmentName="sertifakalifirmalar.proje.Fragments.TumSertifikalıFirmalarFilterBar" type="XML" />
 			</IconTabFilter>
 			<IconTabFilter text="Kriterlere Göre Listele" key="kriterler">
 				
